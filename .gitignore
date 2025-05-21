@@ -1,0 +1,8 @@
+# Ignore node_modules
+node_modules/
+# Ignore build output (Next.js)
+.next/
+# Ignore environment variables
+.env
+# Ignore Vercel build files
+.vercel/
