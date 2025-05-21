@@ -43,3 +43,7 @@ export default function Login() {
     </div>
   );
 }
+
+export const getServerSideProps = () => {
+  return { props: {} };
+};
