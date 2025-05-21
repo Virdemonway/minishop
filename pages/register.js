@@ -1,4 +1,4 @@
-import { useAuth } from '../lib/auth';
+import { useAuth } from '../lib/auth.js';
 
 export default function Register() {
   const { register, loading } = useAuth();
