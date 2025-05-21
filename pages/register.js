@@ -53,4 +53,7 @@ export default function Register() {
       </form>
     </div>
   );
-}
+
+export const getServerSideProps = () => {
+  return { props: {} };
+};
