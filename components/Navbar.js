@@ -2,7 +2,11 @@ import Link from 'next/link';
 import { useAuth } from '../lib/auth';
 
 export default function Navbar() {
-  const { user, logout } = useAuth();
+  const { user, logout, loading } = useAuth();
+
+  if (loading) {
+    return <nav className="bg-gray-900 bg-opacity-80 p-4"></nav>; // 加载时显示空导航栏
+  }
 
   return (
     <nav className="bg-gray-900 bg-opacity-80 p-4">
