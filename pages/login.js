@@ -1,7 +1,11 @@
 import { useAuth } from '../lib/auth';
 
 export default function Login() {
-  const { login } = useAuth();
+  const { login, loading } = useAuth();
+
+  if (loading) {
+    return <div className="container mx-auto p-4 text-white">Loading...</div>;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
